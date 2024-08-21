@@ -299,17 +299,16 @@ background-color: #00FF00; /*緑色*/
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-  <form action="https://gyhentai.com/7fanboxd-home.html">
-    <input type="password" pattern="5656" title="Enter the correct password" required>
-    <input type="submit" value="Submit">
-  </form>
-</body>
-</html>
+<input type="button" value="パスワードを入力して秘密のページへアクセスする" onclick="gate();">
+function gate() {
+    var password = prompt("パスワードを入力してください:");
+    if (password == "5656") {
+        window.location.href = "3nizimesu-1.html";
+    } else {
+        alert("パスワードが違います。");
+    }
+}
+
 
 
 
