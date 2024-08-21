@@ -142,14 +142,7 @@ header {
 <a href="3nizimesu-2.html"><img src="3irasuto/nizimesu (2).png"width=: auto; height=100% alt="マシュキリエライト"></a>		
 
 <input type="button" value="パスワードを入力して秘密のページへアクセスする" onclick="gate();">
-function gate() {
-    var password = prompt("パスワードを入力してください:");
-    if (password == "5656") {
-        window.location.href = "3nizimesu-1.html";
-    } else {
-        alert("パスワードが違います。");
-    }
-}
+
 
 
 <br><script type="text/javascript">blogparts={"id":"9119","ssl":"1"}</script><script type="text/javascript" src="https://www.dlsite.com/js/blogparts.js" charset="UTF-8"></script>
@@ -309,7 +302,14 @@ background-color: #00FF00; /*緑色*/
 
 
 <style>
-
+function gate() {
+    var password = prompt("パスワードを入力してください:");
+    if (password == "5656") {
+        window.location.href = "3nizimesu-1.html";
+    } else {
+        alert("パスワードが違います。");
+    }
+}
 </style>
 
 
