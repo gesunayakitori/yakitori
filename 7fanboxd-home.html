@@ -299,30 +299,17 @@ background-color: #00FF00; /*緑色*/
 
 
 
-<!-- login.php -->
 <!DOCTYPE html>
 <html>
 <head>
 </head>
 <body>
-  <form action="check_password.php" method="post">
-    <input type="password" name="password" required>
+  <form action="7fanboxd-home.html.html">
+    <input type="password" pattern="mypassword" title="Enter the correct password" required>
     <input type="submit" value="Submit">
   </form>
 </body>
 </html>
-
-<!-- check_password.php -->
-<?php
-$password = $_POST['password'];
-$correct_password = "mypassword";
-
-if ($password == $correct_password) {
-  header("Location: protected_page7fanboxd-home");
-} else {
-  echo "Incorrect password!";
-}
-?>
 
 
 
