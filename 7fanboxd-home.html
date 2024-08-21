@@ -308,11 +308,21 @@ background-color: #00FF00; /*緑色*/
 
   </head>
 	
+
+	
+  <body>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
 <script>
 function checkPassword() {
   var password = document.getElementById("password").value;
   if (password == "mypassword") {
-    location.href = "7fanboxd-home.html";
+    location.href = "protected_page.html";
   } else {
     alert("Incorrect password!");
   }
@@ -321,9 +331,6 @@ function checkPassword() {
 </head>
 <body>
   <input type="password" id="password">
-  <button onclick="checkPassword(5656)">Submit</button>
-	
-  <body>
-
-  </body>
-</html>
+  <button onclick="checkPassword()">Submit</button>
+</body>
+</html>	
