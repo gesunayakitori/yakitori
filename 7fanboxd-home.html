@@ -307,6 +307,22 @@ background-color: #00FF00; /*緑色*/
 	
 
   </head>
+	
+<script>
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  if (password == "mypassword") {
+    location.href = "protected_page.html";
+  } else {
+    alert("Incorrect password!");
+  }
+}
+</script>
+</head>
+<body>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Submit</button>
+	
   <body>
 
   </body>
